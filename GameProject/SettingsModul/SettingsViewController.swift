@@ -150,7 +150,6 @@ private extension SettingsViewController {
         viewOfPlanesColor.makeViewOfPlanesColorOnSettingsVC(color: (presenter?.currentColor())!)
         labelOfSpeed.makeCustomLabelInSettingsVCAndGameVC(text: (presenter?.currentSpeed().rawValue)!)
         saveButton.makeCustomButton(text: String.saveText)
-
     }
     
     //MARK: - setupAction

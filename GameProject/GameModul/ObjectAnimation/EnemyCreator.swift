@@ -5,15 +5,6 @@
 //  Created by Дмитрий Пономарев on 15.09.2023.
 //
 
-import Foundation
-
-//
-//  EnemyMaker.swift
-//  GameApp
-//
-//  Created by Дмитрий Пономарев on 14.09.2023.
-//
-
 import UIKit
 
 private extension Int {

@@ -111,9 +111,7 @@ class RocksCreator: UIView {
     
     //    MARK: - timer to get position of each rock in time
 
-    @objc func getPositionOfRocks() {
-        //  также необходимо реализовать функцию уничтожения самолета если он попал в скалы, проверить диапазон значений у вражеских самолетов чтобы не появились в месте скал
-        
+    @objc func getPositionOfRocks() {        
         guard let arrayOfRocksXY = makeArrayOfRocksXYPositions() else { return }
         for each in arrayOfRocksXY {
             if each.y >= Int(self.frame.height) + Int.rocksHeight {

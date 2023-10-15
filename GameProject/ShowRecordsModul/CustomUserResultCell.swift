@@ -80,6 +80,5 @@ private extension CustomPlayerResultsCell {
         contentView.backgroundColor = .systemGray4
         scoreLabel.font = .boldSystemFont(ofSize: 20)
         playerNameLabel.font = .boldSystemFont(ofSize: 20)
-
     }
 }

@@ -120,7 +120,7 @@ private extension MainMenuViewController {
     //MARK: - objc method
     
     @objc func pressStartGame() {
-        presenter?.router?.startGame(playerSettings: playersSettings ?? PlayerSettingsModel(colorOfPlane: .red, playersName: "Unknown", speed: .low))
+        presenter?.router?.startGame(playerSettings: playersSettings ?? PlayerSettingsModel(colorOfPlane: .red, playersName: .unknownedPlayerText, speed: .low))
     }
     @objc func pressShowRecords() {
         presenter?.router?.showRecords()

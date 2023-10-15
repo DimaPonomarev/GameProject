@@ -129,16 +129,16 @@ private extension GameViewController {
     //MARK: - setupViews
     
     func setupViews() {
-        title = String.letsGoText + playerSettings.playersName
+        title = .letsGoText + playerSettings.playersName
         view.backgroundColor = .systemGray4
         
         animationDelegate.planesConfigure.viewOfPlayersPlane.backgroundColor = playerSettings.colorOfPlane
         animationDelegate.enemyConfigure.speed = presenter?.makeGameConfigurations() ?? 0
-        scoreLabel.makeCustomLabelInSettingsVCAndGameVC(text: String.totalScoreText + "\(Int())")
-        livesLeftLabel.makeCustomLabelInSettingsVCAndGameVC(text: String.livesLeftText + "\(Int.numberOfLives)")
-        buttonFire.makeCustomButtonInGameVC(text: String.fireText)
-        buttonStart.makeCustomButton(text: String.startText)
-        panGestureButton.makeCustomButtonInGameVC(text: String.turnText)
+        scoreLabel.makeCustomLabelInSettingsVCAndGameVC(text: .totalScoreText + "\(Int())")
+        livesLeftLabel.makeCustomLabelInSettingsVCAndGameVC(text: .livesLeftText + "\(Int.numberOfLives)")
+        buttonFire.makeCustomButtonInGameVC(text: .fireText)
+        buttonStart.makeCustomButton(text: .startText)
+        panGestureButton.makeCustomButtonInGameVC(text: .turnText)
         panGestureButton.isEnabled = false
         buttonFire.isEnabled = false
     }
